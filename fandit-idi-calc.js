@@ -141,6 +141,34 @@ var CSS = `
   max-width:1180px;margin:0 auto;padding:24px 24px 0;font-size:12px;color:var(--ink-soft);border-top:1px solid var(--line);
 }
 .fandit-idi-calc .page-foot a{color:var(--ink);font-weight:600;}
+
+/* ---------- Mobile ---------- */
+.fandit-idi-calc{overflow-x:hidden;}
+@media (max-width:768px){
+  .fandit-idi-calc .hero-inner{padding:22px 18px 24px;gap:20px;align-items:flex-start;}
+  .fandit-idi-calc .brand-row{margin-bottom:16px;}
+  .fandit-idi-calc .hero-text h1{font-size:26px;max-width:100%;}
+  .fandit-idi-calc .hero-text p{font-size:14.5px;max-width:100%;}
+  .fandit-idi-calc .hero-meta{white-space:normal;width:100%;font-size:11.5px;padding:12px 14px;}
+  .fandit-idi-calc .wrap{padding:0 14px 40px;}
+  .fandit-idi-calc .board{border-left:none;border-right:none;margin:0 -14px;}
+  .fandit-idi-calc .form-col{padding:24px 16px 30px;}
+  .fandit-idi-calc .result-col{padding:24px 16px 32px;}
+  .fandit-idi-calc .section h2{font-size:19px;}
+  .fandit-idi-calc .choice-grid{grid-template-columns:1fr;}
+  .fandit-idi-calc .radio-row .choice{min-width:0;flex:1 1 100%;}
+  .fandit-idi-calc .total-box .amount{font-size:32px;}
+  .fandit-idi-calc .fund-card .fc-top{flex-direction:column;align-items:flex-start;gap:4px;}
+  .fandit-idi-calc .fund-card .fc-amount{font-size:20px;}
+  .fandit-idi-calc .fund-card .fc-foot{flex-direction:column;align-items:flex-start;gap:6px;}
+  .fandit-idi-calc .page-foot{padding:20px 16px 0;}
+}
+@media (max-width:400px){
+  .fandit-idi-calc .hero-text h1{font-size:23px;}
+  .fandit-idi-calc select,
+  .fandit-idi-calc input[type=number],
+  .fandit-idi-calc input[type=text]{font-size:16px;} /* evita el zoom automatico de iOS */
+}
 `;
 
 var MARKUP = `
